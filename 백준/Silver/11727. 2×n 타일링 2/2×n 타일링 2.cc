@@ -18,7 +18,7 @@ int main()
 	int n;
 	cin >> n;
 
-	cout << f(n) % 10007;
+	cout << f(n);
 
 	return 0;
 }
