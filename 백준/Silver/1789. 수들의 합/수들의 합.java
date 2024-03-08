@@ -8,16 +8,12 @@ public class Main {
         long s = scanner.nextLong();
         long temp = 0, cnt = 0;
 
-        for (long i = 1; i < s; i++)
+        while(temp <= s)
         {
-            if (temp + i <= s)
-            {
-                temp += i;
-                cnt++;
-            }
+            cnt++;
+            temp += cnt;
         }
-        if (s == 1)
-            cnt = 1;
-        System.out.println(cnt);
+
+        System.out.println(cnt - 1);
     }
 }
