@@ -20,10 +20,14 @@ int main() {
         result += temp;
     }
 
-    if (result[0] == '0' && s != "0")
-        cout << result.substr(1);
-    else
-        cout << result;
+    for (int i = 0; i < result.length(); i++) {
+        if (result[i] == '0')
+            continue;
+        else {
+            cout << result.substr(i);
+            break;
+        }
+    }
 
     return 0;
 }
